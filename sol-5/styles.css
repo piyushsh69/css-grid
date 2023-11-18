@@ -1,0 +1,25 @@
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-items: center;
+    /* This sets the default horizontal alignment for all grid items */
+}
+
+.grid-item-1 {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.grid-item-2 {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    justify-self: end;
+    /* This sets the horizontal alignment for this specific grid item */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- In CSS Grid, justify-items and justify-self are properties that control the horizontal alignment of grid items within a
+grid container. Let's break down the differences between these two properties using code examples.
+
+justify-items:
+The justify-items property is used to set the default horizontal alignment for all grid items within the grid container.
+It affects all direct children of the grid container. -->
+
+<div class="grid-container-1">
+    <div class="grid-item-1">1</div>
+    <div class="grid-item-1">2</div>
+    <div class="grid-item-1">3</div>
+</div>
+
+<!-- In this example, all grid items within the .grid-container will be horizontally centered due to the justify-items:
+center; property.
+
+justify-self:
+On the other hand, the justify-self property is used to override the horizontal alignment of a specific grid item. It
+allows you to individually control the horizontal alignment for each grid item. -->
+
+<div class="grid-container-2">
+    <div class="grid-item-2">1</div>
+    <div class="grid-item-2">2</div>
+    <div class="grid-item-2">3</div>
+</div>
+
+<!-- In this example, all grid items will still have a default horizontal alignment based on the grid container's
+justify-items property. However, the specific grid item with the class .grid-item will have its horizontal alignment set
+to the end, overriding the default alignment.
+
+In summary, justify-items sets the default horizontal alignment for all grid items within a grid container, while
+justify-self allows you to individually override the default alignment for specific grid items. -->
+
+</body>
+</html>

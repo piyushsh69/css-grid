@@ -1,0 +1,85 @@
+<!-- grid-auto-rows and grid-auto-columns are properties in CSS Grid Layout used to define the size of implicitly created rows and columns in a grid layout when grid items are placed in areas that don't have explicit rows or columns defined. These properties are particularly helpful when you have grid items placed in grid areas that exceed the explicitly defined grid rows or columns. -->
+
+<!-- grid-auto-rows -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            /* Explicitly defining 2 columns */
+            grid-auto-rows: 50px;
+            /* Implicitly created rows will have a height of 50px */
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- In this example, the grid has two explicitly defined columns and no explicitly defined rows, only grid-auto-rows is defined. This results in each row being implicitly created to have a height of 50px. So, even though there are more grid items than the number of explicitly defined rows, the grid will automatically create the necessary rows to accommodate the items. -->
+
+<!-- grid-auto-columns -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 100px 100px;
+            /* Explicitly defining 2 rows */
+            grid-auto-columns: 50px;
+            /* Implicitly created columns will have a width of 50px */
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Here, the grid has two explicitly defined rows and no explicitly defined columns, only grid-auto-columns is defined. This leads to each column being implicitly created with a width of 50px. As a result, the grid automatically generates the necessary columns to accommodate the grid items. -->
